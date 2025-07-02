@@ -1,0 +1,15 @@
+{
+  "name": "com.zeni.x-pool",
+  "displayName": "X-Pool",
+  "description": "Extension-Based Pooling for Unity",
+  "hideInEditor": "false",
+  "version": "1.0.0",
+  "unity": "6000.0",
+  "license": "MIT",
+  "author": {
+    "name": "zenikode",
+    "email": "zenikode@gmail.com",
+    "url": "https://github.com/x-pool"
+  },
+  "dependencies": {}
+}
