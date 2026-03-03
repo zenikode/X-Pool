@@ -28,6 +28,7 @@ bulletPrefab.RemovePoolable(bullet);
 Via Git URL: Add this to your Unity project's Packages/manifest.json:
 
 ```json
+"com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask", //if not referenced 
 "com.zeni.x-pool": "https://github.com/zenikode/X-Pool.git?path=Assets",
 ```
 

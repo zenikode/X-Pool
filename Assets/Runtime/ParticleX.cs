@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace XPool.Runtime
@@ -11,7 +12,7 @@ namespace XPool.Runtime
             var result = pool.Spawn();
             result.transform.position = position;
             result.Play();
-            await Awaitable.WaitForSecondsAsync(prefab.main.duration);
+            await UniTask.WaitForSeconds(prefab.main.duration);
             pool.Remove(result);
         }
 
@@ -24,7 +25,7 @@ namespace XPool.Runtime
             tf.rotation = rotation;
             tf.localScale = scale;
             result.Play();
-            await Awaitable.WaitForSecondsAsync(prefab.main.duration);
+            await UniTask.WaitForSeconds(prefab.main.duration);
             pool.Remove(result);
         }
     }
